@@ -1,4 +1,4 @@
-name: Script tests
+name: Parallel build tests
 on: push
 jobs:
   addToCart-run:
@@ -12,7 +12,7 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
             command: npm run addToCart
-            
+
   registerFlow-run:
     runs-on: ubuntu-22.04
     steps:
